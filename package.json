@@ -1,0 +1,38 @@
+{
+  "name": "llantas_rosymar_backend",
+  "version": "1.0.0",
+  "description": "llantas Rosy Mar backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronJau21/llantas_RosyMar_backend.git"
+  },
+  "keywords": [
+    "Express",
+    "Postgres",
+    "TS"
+  ],
+  "author": "Aaron Jauregui Sifuentes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaronJau21/llantas_RosyMar_backend/issues"
+  },
+  "homepage": "https://github.com/aaronJau21/llantas_RosyMar_backend#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.11",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "env-var": "^7.5.0",
+    "express": "^4.19.2"
+  }
+}
